@@ -1,0 +1,23 @@
+{
+  "name": "pthalamy-pp",
+  "version": "1.0.0",
+  "description": "Pierre Thalamy's personal page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pthalamy/pthalamy-pp.git"
+  },
+  "author": "Pierre Thalamy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pthalamy/pthalamy-pp/issues"
+  },
+  "homepage": "https://github.com/pthalamy/pthalamy-pp#readme",
+  "dependencies": {
+    "bulma": "^0.8.2",
+    "start": "^5.1.0"
+  }
+}
