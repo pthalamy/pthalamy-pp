@@ -26,4 +26,39 @@ $primary-invert: $pink-invert;
 // 4. Import the rest of Bulma
 */
 
+$myblue:#044F67;
+$myblue-invert: #fff;
+$mybg: #f6f9fc;
+$primary: $myblue;
+$primary-invert: $myblue-invert;
+
+#internet-buttons a .icon {
+    // color: $myblue;
+}
+
+.hero {
+    margin-bottom: 2em;
+}
+
+.navbar {
+    // margin-bottom: 4em;
+}
+
+.navbar-item i {
+  display: inline-block;
+  margin-right: 10em;
+}
+
+html, body {
+    background-color: $mybg;
+    margin: 0;
+    height: 100%;
+}
+
+.profile-image {
+    width: 192px;
+    height: 192px;
+    margin-bottom: 1em;
+}
+
 @import "../node_modules/bulma/bulma";

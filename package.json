@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/pthalamy/pthalamy-pp#readme",
   "dependencies": {
+    "academicons": "^1.8.6",
     "autoprefixer": "^9.7.6",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
