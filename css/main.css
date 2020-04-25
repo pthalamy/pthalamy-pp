@@ -44,6 +44,12 @@ html, body {
 .paper-proc {
   font-style: italic; }
 
+.paper-buttons {
+  margin-top: 1em; }
+
+.paper-icon {
+  color: #044F67; }
+
 .vertical-center {
   margin: 0;
   position: absolute;

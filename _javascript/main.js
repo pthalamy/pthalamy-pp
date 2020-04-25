@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log('Hello Bulma!');
 });
 
-function showModal() {
+function showContactModal() {
     document.getElementById("contact-modal").classList.add("is-active");
 }
 
-function hideModal() {
+function hideContactModal() {
     document.contactform.reset();
     document.getElementById("contact-modal").classList.remove("is-active");
 }
@@ -35,4 +35,12 @@ function validateFormInput() {
     document.contactform.reset();
 
     return true;
+}
+
+function showModal(id) {
+    document.getElementById(id).classList.add("is-active");
+}
+
+function hideModal(id) {
+    document.getElementById(id).classList.remove("is-active");
 }
