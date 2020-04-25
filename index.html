@@ -25,12 +25,12 @@
 
       <div id="navbarHome" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item is-active">
+          <a class="navbar-item is-active" href="#">
             <i class="fa fa-fw fa-home"></i> Home
           </a>
 
-          <a class="navbar-item">
-            Research
+          <a class="navbar-item" href="publications.html">
+            Publications
           </a>
 
           <a class="navbar-item">
@@ -103,13 +103,57 @@
 
               <div class="card-content has-text-centered">
                 <figure class="image is-inline-block profile-image">
-                  <img src="images/profile_qualt.jpg" class="is-rounded profile-image"/>
+                  <img src="images/profile_qcentered.jpg" class="is-rounded profile-image"/>
                 </figure>
                 <p class="title is-space is-primary-invert">
                   Pierre Thalamy
                 </p>
                 <p class="subtitle">
                   Computer Science PhD Student at FEMTO-ST Institute CNRS
+                </p>
+                <p class="buttons is-centered" id="internet-buttons">
+                  <a class="button" href="https://github.com/pthalamy" target="_blank" rel="noopener">
+                    <span class="icon">
+                      <i class="fab fa-github" aria-hidden="true"></i>
+                    </span>
+                  </a>
+
+                  <a class="button" href="https://www.femto-st.fr/en/femto-people/pthalamy" target="_blank" rel="noopener">
+                    <span class="icon">
+                      <i class="fas fa-flask"></i>
+                    </span>
+                  </a>
+
+                  <a class="button" href="https://scholar.google.com/citations?user=igSEoMoAAAAJ&hl=en" target="_blank" rel="noopener">
+                    <span class="icon">
+                      <i class="ai ai-google-scholar"></i>
+                    </span>
+                  </a>
+
+                  <a class="button" href="https://www.researchgate.net/profile/Pierre_Thalamy" target="_blank" rel="noopener">
+                    <span class="icon">
+                      <i class="fab fa-researchgate"></i>
+                    </span>
+                  </a>
+
+                  <a class="button" href="https://www.linkedin.com/in/pthalamy/" target="_blank" rel="noopener">
+                    <span class="icon">
+                      <i class="fab fa-linkedin-in"></i>
+                    </span>
+                  </a>
+
+                  <a class="button" href="https://twitter.com/pthalamy" target="_blank" rel="noopener">
+                    <span class="icon">
+                      <i class="fab fa-twitter"></i>
+                    </span>
+                  </a>
+
+                  <a class="button modal-button" onClick="showModal()">
+                    <span class="icon">
+                      <i class="far fa-envelope"></i>
+                    </span>
+                  </a>
+
                 </p>
               </div>
 
@@ -147,50 +191,83 @@
                   <hr class="primary">
                 </div>
                 <div class="content">
-                  <p class="buttons" id="internet-buttons">
-                    <a class="button" href="https://github.com/pthalamy" target="_blank" rel="noopener">
-                      <span class="icon">
-                        <i class="fab fa-github" aria-hidden="true"></i>
-                      </span>
-                    </a>
-
-                    <a class="button" href="https://www.femto-st.fr/en/femto-people/pthalamy" target="_blank" rel="noopener">
-                      <span class="icon">
-                        <i class="fas fa-flask"></i>
-                      </span>
-                    </a>
-
-                    <a class="button" href="https://scholar.google.com/citations?user=igSEoMoAAAAJ&hl=en" target="_blank" rel="noopener">
-                      <span class="icon">
-                        <i class="ai ai-google-scholar"></i>
-                      </span>
-                    </a>
-
-                    <a class="button" href="https://www.researchgate.net/profile/Pierre_Thalamy" target="_blank" rel="noopener">
-                      <span class="icon">
-                        <i class="fab fa-researchgate"></i>
-                      </span>
-                    </a>
-
-                    <a class="button" href="https://www.linkedin.com/in/pthalamy/" target="_blank" rel="noopener">
-                      <span class="icon">
-                        <i class="fab fa-linkedin-in"></i>
-                      </span>
-                    </a>
-
-                    <a class="button" href="https://twitter.com/pthalamy" target="_blank" rel="noopener">
-                      <span class="icon">
-                        <i class="fab fa-twitter"></i>
-                      </span>
-                    </a>
-
-                  </p>
                 </div>
               </div>
             </div>
           </div>
 
 
+        </div>
+      </div>
+    </section>
+
+    <section id="modals">
+      <div class="container">
+        <div class="modal" id="contact-modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+
+            <form action="https://formspree.io/xgelgaja"
+                  name="contactform"
+                  method="POST"
+                  onsubmit="return validateFormInput()">
+              <div class="field">
+                <label class="label has-text-white">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Your name" name="name">
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-white">Email</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input is-danger" type="email" id="email-input"
+                         placeholder="email" value="" name="_replyto">
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span class="icon is-small is-right is-hidden" id="email-warning-sign" >
+                    <i class="fas fa-exclamation-triangle"></i>
+                  </span>
+                </div>
+                <p class="help is-danger is-hidden" id="email-warning-label">
+                  This email is invalid
+                </p>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-white">Subject</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Subject"
+                         name="subject"></input>
+                </div>
+              </div>
+
+              <div class="field">
+                <label class="label has-text-white">Message</label>
+                <div class="control">
+                  <textarea class="textarea" placeholder="Your message" name="message">
+                  </textarea>
+                </div>
+              </div>
+
+              <div class="field is-grouped">
+                <div class="control">
+                  <button class="button is-link" type="submit">
+                    Submit
+                  </button>
+                </div>
+                <div class="control">
+                  <button class="button is-link is-light" onClick="hideModal()">
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+          <button class="modal-close is-large" aria-label="close" onClick="hideModal()">
+          </button>
         </div>
       </div>
     </section>
