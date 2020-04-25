@@ -35,6 +35,22 @@ html, body {
   height: 192px;
   margin-bottom: 1em; }
 
+.paper-thumbnail {
+  box-shadow: 5px 5px 5px 5px  grey; }
+
+.paper-authors {
+  margin-bottom: 0.25em !important; }
+
+.paper-proc {
+  font-style: italic; }
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {

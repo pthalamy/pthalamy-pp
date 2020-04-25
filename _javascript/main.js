@@ -7,6 +7,7 @@ function showModal() {
 }
 
 function hideModal() {
+    document.contactform.reset();
     document.getElementById("contact-modal").classList.remove("is-active");
 }
 

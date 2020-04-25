@@ -61,4 +61,31 @@ html, body {
     margin-bottom: 1em;
 }
 
+.paper-thumbnail {
+    box-shadow: 5px 5px 5px 5px  grey;
+}
+
+.paper-title {
+
+}
+
+.paper-authors {
+    margin-bottom: 0.25em !important;
+}
+
+.paper-proc {
+    font-style: italic;
+}
+
+.paper-abstract {
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 @import "../node_modules/bulma/bulma";

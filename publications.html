@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pierre Thalamy - Personal Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/academicons/css/academicons.min.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+
+      <div id="navbarHome" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="index.html">
+            <i class="fa fa-fw fa-home"></i> Home
+          </a>
+
+          <a class="navbar-item is-active" href="#">
+            Publications
+          </a>
+
+          <a class="navbar-item">
+            <i class="fas fa-fw fa-file-pdf"></i> CV
+          </a>
+
+          </div>
+        </div>
+
+        <div class="navbar-end">
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero is-primary is-bold is-small">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Publications
+          </h1>
+          <h2 class="subtitle">
+            Research papers published in conferences and academic journals.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications-list" class="is-primary is-medium">
+      <div class="container">
+        <div class="columns is-centered is-multiline">
+          <div class="column">
+            <div class="box">
+              <div class="columns">
+                <div class="column is-2-desktop">
+                  <figure class="image is-inline-block paper-thumbnail">
+                    <a href="./papers/AAMAS19.pdf" target="_blank">
+                      <img src="papers/thumbnails/AAMAS19.png"/>
+                    </a>
+                  </figure>
+                </div>
+                <div class="column">
+                  <!-- Thalamy, P., B. Piranda, F. Lassabe, and J. Bourgeois. “Scaffold-Based Asynchronous Distributed Self-Reconfiguration By Continuous Module Flow.” In 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 4840–46, 2019. https://doi.org/10.1109/IROS40897.2019.8967775. -->
+
+                  <a href="https://doi.org/10.5555/3306127.3331685" target="_blank">
+                    <p class="title is-4 paper-title">Scaffold-Based Asynchronous Distributed Self-Reconfiguration By Continuous Module Flow</p>
+                  </a>
+                  <p class="subtitle is-5 paper-authors">Pierre Thalamy, Benoît Piranda, Frédéric Lassabe, and Julien Bourgeois</p>
+                  <p class="paper-proc subtitle is-6">In 2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</p>
+                  <p class="has-text-justified paper-abstract">
+                    In the context of large distributed modular robots, self-reconfiguration is the process of having modules, seen as autonomous agents, acting together and moving to transform the morphology of their physical arrangement to produce a desired shape. However, due to motion constraints, the number of modules that can move concurrently is greatly limited, thus making self-reconfiguration a very slow process.<br>
+                    In this paper, we propose an approach for accelerating self-reconfi--guration to build a porous version of the desired shape, using scaffolding. We expand this idea and propose a method for constructing a parametric scaffolding model that increases the parallelism of the reconfiguration, supports its mechanical stability, and simplifies planning and coordination between agents. Each agent has a set of basic rules using only four states which guarantees that module movements and the construction of the scaffold are deterministic.<br>
+                    Coupled with an underneath reserve of modules that allows the introduction of rotating quasi-spherical modules at various ground locations of the growing porous structure, our method is able to build the scaffolding structure in O(n^(2/3)) time with N the number of modules composing the structure. Furthermore, we provide simulation results showing that our method uses O(n^(4/3)) messages with no congestion.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+  </body>
+</html>
