@@ -84,6 +84,54 @@
               <div class="columns">
                 <div class="column is-2-desktop">
                   <figure class="image is-inline-block paper-thumbnail">
+                    <a href="./papers/SWEVO20.pdf" target="_blank">
+                      <img src="papers/thumbnails/SWEVO20.png"/>
+                    </a>
+                  </figure>
+                  <p class="buttons is-centered paper-buttons">
+                    <a class="button" title="Cite this paper"
+                       onClick="showModal('cite-swevo20-modal')">
+                      <span class="icon paper-icon">
+                        <i class="fas fa-quote-right" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="button" href="./papers/SWEVO20.pdf"
+                       download="thalamy_swevo_2020.pdf" target="_blank"
+                       title="Download">
+                      <span class="icon paper-icon">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="button" title="doi:TBD" disabled>
+                      <span class="icon paper-icon">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <div class="column">
+                  <a disabled>
+                    <p class="title is-4 paper-title">Deterministic Scaffold Assembly By Self-Reconfiguring Micro-Robotic Swarms</p>
+                  </a>
+                  <p class="subtitle is-5 paper-authors">Pierre Thalamy, Benoît Piranda, Frédéric Lassabe, and Julien Bourgeois</p>
+                  <p class="paper-proc subtitle is-6">Swarm and Evolutionary Computation — Special Issue on: “Parallel/Distributed Combinatorics and Optimization”</p>
+                  <p class="has-text-justified paper-abstract">
+The self-reconfiguration of large swarms of modular robotic units from one object into another is an intricate problem whose critical parameter that must be optimized is the time required to perform a transformation. Various optimizations methods have been proposed to accelerate transformations, as well as techniques to engineer the shape itself, such as scaffolding which creates an internal object structure filled with holes for easing the motion of modules.
+In this paper, we propose a novel deterministic and distributed method for rapidly constructing the scaffold of an object from an organized reserve of modules placed underneath the reconfiguration scene. This innovative scaffold design is parameterizable and has a face-centered-cubic lattice structure made from our rotating-only micro-modules. Our method operates at two levels of planning, scheduling the construction of components of the scaffold to avoid deadlocks at one level, and handling the navigation of modules and their coordination to avoid collisions in the other.
+We provide an analysis of the method and perform simulations on shapes with an increasing level of intricacy to show that our method has a reconfiguration time complexity of $O(\sqrt[3]{N})$ time steps for a subclass of convex shapes, with $N$ the number of modules in the shape. We then proceed to explain how our solution can be further extended to any shape.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="columns is-centered is-multiline">
+          <div class="column">
+            <div class="box">
+              <div class="columns">
+                <div class="column is-2-desktop">
+                  <figure class="image is-inline-block paper-thumbnail">
                     <a href="./papers/IROS19.pdf" target="_blank">
                       <img src="papers/thumbnails/IROS19.png"/>
                     </a>
@@ -231,6 +279,29 @@
 
     <section id="modals">
       <div class="container">
+
+        <div class="modal" id="cite-swevo20-modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <article class="message is-primary">
+              <div class="message-header">
+                <p>Citation (BibTex)</p>
+                <button class="delete" aria-label="delete"
+                        onClick="hideModal('cite-swevo20-modal')"></button>
+              </div>
+              <div class="message-body has-text-dark">
+                @article{thalamy_deterministic_2020,<br>
+                title = {Deterministic Scaffold Assembly By Self-Reconfiguring Micro-Robotic Swarms},<br>
+                journaltitle = {Swarm and Evolutionary Computation,<br>
+                author = {Thalamy, P. and Piranda, B. and Lassabe, F. and Bourgeois, J.},<br>
+                date = {2020},<br>
+                keywords = {Modular Robotic Swarm, Self-Reconfiguration, Large-Scale Swarm Coordination, Distributed Algorithm, Scaffolding},<br>
+                }
+              </div>
+            </article>
+          </div>
+        </div>
+
 
         <div class="modal" id="cite-iros19-modal">
           <div class="modal-background"></div>
