@@ -19,12 +19,41 @@
           </a>
 
           <a class="navbar-item is-active" href="#">
-            Publications
+            <i class="fas fa-fw fa-copy"></i> Publications
           </a>
 
-          <a class="navbar-item">
-            <i class="fas fa-fw fa-file-pdf"></i> CV
-          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <i class="fas fa-fw fa-file-pdf"></i> CV
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./files/cv_pthalamy_052020_en-us.pdf"
+                 target="_blank">
+                English Version
+              </a>
+              <a class="navbar-item" href="./files/cv_pthalamy_052020_fr.pdf"
+                 target="_blank">
+                Version Française
+              </a>
+            </div>
+          </div>
+
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item modal-button" onClick="showContactModal()">
+                Contact
+              </a>
+            </div>
+          </div>
 
         </div>
 

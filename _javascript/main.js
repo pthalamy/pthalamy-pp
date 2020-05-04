@@ -2,6 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // console.log('Hello Bulma!');
 });
 
+/// Close Modals when clicking outside of them
+var modal = document.querySelector(".modal");
+
+// Detect all clicks on the document
+document.addEventListener("click", function(event) {
+    // If user clicks inside the element, do nothing
+    if (event.target.closest(".modal-background")) {
+        // If user clicks inside the modal's background, hide it!
+        modal.classList.remove("is-active");
+    }
+});
+
 function showContactModal() {
     document.getElementById("contact-modal").classList.add("is-active");
 }

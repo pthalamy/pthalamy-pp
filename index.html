@@ -30,37 +30,44 @@
           </a>
 
           <a class="navbar-item" href="publications.html">
-            Publications
+            <i class="fas fa-fw fa-copy"></i> Publications
           </a>
 
-          <a class="navbar-item">
-            <i class="fas fa-fw fa-file-pdf"></i> CV
-          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              <i class="fas fa-fw fa-file-pdf"></i> CV
+            </a>
 
-          <!-- <div class="navbar-item has-dropdown is-hoverable"> -->
-            <!--   <a class="navbar-link"> -->
-              <!--     More -->
-              <!--   </a> -->
-
-            <!--   <div class="navbar-dropdown"> -->
-              <!--     <a class="navbar-item"> -->
-                <!--       About -->
-                <!--     </a> -->
-              <!--     <a class="navbar-item"> -->
-                <!--       Jobs -->
-                <!--     </a> -->
-              <!--     <a class="navbar-item"> -->
-                <!--       Contact -->
-                <!--     </a> -->
-              <!--     <hr class="navbar-divider"> -->
-              <!--     <a class="navbar-item"> -->
-                <!--       Report an issue -->
-                <!--     </a> -->
-              <!--   </div> -->
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="./files/cv_pthalamy_052020_en-us.pdf"
+                 target="_blank">
+                English Version
+              </a>
+              <a class="navbar-item" href="./files/cv_pthalamy_052020_fr.pdf"
+                 target="_blank">
+                Version Française
+              </a>
+            </div>
           </div>
-        </div>
 
-        <div class="navbar-end">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              More
+            </a>
+
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                About
+              </a>
+              <hr class="navbar-divider">
+              <a class="navbar-item modal-button" onClick="showContactModal()">
+                Contact
+              </a>
+            </div>
+          </div>
+
+          <div class="navbar-end">
+          </div>
         </div>
       </div>
     </nav>
@@ -87,11 +94,11 @@
         <div class="container">
           <br><br>
           <!-- <h1 class="title"> -->
-          <!--   Home -->
-          <!-- </h1> -->
+            <!--   Home -->
+            <!-- </h1> -->
           <!-- <h2 class="subtitle"> -->
-          <!--   Home. -->
-          <!-- </h2> -->
+            <!--   Home. -->
+            <!-- </h2> -->
         </div>
       </div>
     </section>
@@ -191,7 +198,7 @@
                 </div>
                 <div class="content">
                   <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21560.533818834625!2d6.794711363097295!3d47.50809170017948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792168cd6c87ad9%3A0x409ce34b313da10!2s25200%20Montb%C3%A9liard!5e0!3m2!1sen!2sfr!4v1587920280559!5m2!1sen!2sfr" width="600" height="450" frameborder="0" style="border:0; position:relative;" aria-hidden="false" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21560.533818834625!2d6.794711363097295!3d47.50809170017948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4792168cd6c87ad9%3A0x409ce34b313da10!2s25200%20Montb%C3%A9liard!5e0!3m2!1sen!2sfr!4v1587920280559!5m2!1sen!2sfr" width="600" height="450" yframeborder="0" style="border:0; position:relative;" aria-hidden="false" allowfullscreen></iframe>
                   </div>
                 </div>
               </div>
@@ -207,21 +214,21 @@
       <div class="container">
         <div class="modal" id="contact-modal">
           <div class="modal-background"></div>
-          <div class="modal-content">
+          <div class="modal-content box">
 
             <form action="https://formspree.io/xgelgaja"
                   name="contactform"
                   method="POST"
                   onsubmit="return validateFormInput()">
               <div class="field">
-                <label class="label has-text-white">Name</label>
+                <label class="label">Name</label>
                 <div class="control">
                   <input class="input" type="text" placeholder="Your name" name="name">
                 </div>
               </div>
 
               <div class="field">
-                <label class="label has-text-white">Email</label>
+                <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
                   <input class="input" type="email" id="email-input"
                          placeholder="email" value="" name="_replyto">
@@ -238,7 +245,7 @@
               </div>
 
               <div class="field">
-                <label class="label has-text-white">Subject</label>
+                <label class="label">Subject</label>
                 <div class="control">
                   <input class="input" type="text" placeholder="Subject"
                          name="subject"></input>
@@ -246,7 +253,7 @@
               </div>
 
               <div class="field">
-                <label class="label has-text-white" style="overflow: auto">Message</label>
+                <label class="label" style="overflow: auto">Message</label>
                 <div class="control">
                   <textarea class="textarea" placeholder="Your message" name="message"value=""></textarea>
                 </div>
@@ -278,7 +285,7 @@
       <div class="content has-text-centered has-text-weight-light">
         <p class="has-text-white">
           Copyright © 2020 Pierre Thalamy
-            <!-- <a href="https://bulma.io"> -->
+          <!-- <a href="https://bulma.io"> -->
             <!--   <img src="images/made-with-bulma--dark.png" alt="Made with Bulma" width="128" height="24"> -->
             <!-- </a> -->
         </p>
