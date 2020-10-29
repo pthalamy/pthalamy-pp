@@ -84,6 +84,55 @@
               <div class="columns">
                 <div class="column is-2-desktop">
                   <figure class="image is-inline-block paper-thumbnail">
+                    <a href="./papers/IROS20.pdf" target="_blank">
+                      <img src="papers/thumbnails/IROS20.png"/>
+                    </a>
+                  </figure>
+                  <p class="buttons is-centered paper-buttons">
+                    <a class="button" title="Cite this paper"
+                       onClick="showModal('cite-iros20-modal')">
+                      <span class="icon paper-icon">
+                        <i class="fas fa-quote-right" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="button" href="./papers/IROS20.pdf"
+                       download="thalamy_iros_2020.pdf" target="_blank"
+                       title="Download">
+                      <span class="icon paper-icon">
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                    <a class="button" title="doi:TBD" target="_blank" disabled>
+                      <span class="icon paper-icon">
+                        <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                      </span>
+                    </a>
+                  </p>
+                </div>
+                <div class="column">
+                  <a disabled>
+                    <p class="title is-4 paper-title">3D Coating Self-Assembly for Modular Robotic Scaffolds</p>
+                  </a>
+                  <p class="subtitle is-5 paper-authors">Pierre Thalamy, Benoît Piranda, and Julien Bourgeois</p>
+                  <p class="paper-proc subtitle is-6">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (2020)</p>
+                  <p class="has-text-justified paper-abstract">
+                    This paper addresses the self-reconfiguration problem in large-scale modular robots for the purpose of shape formation for object representation. It aims to show that this process can be accelerated without compromising on the visual aspect of the final object, by creating an internal skeleton of the shape using the previously introduced sandboxing and scaffolding techniques, and then coating this skeleton with a layer of modules for higher visual fidelity.
+
+We discuss the challenges of the coating problem, introduce a basic method for constructing the coating of a scaffold layer by layer, and show that even with a straightforward algorithm, our scaffolding and coating combo uses much fewer modules than dense shapes and offers attractive reconfiguration times. Finally, we show that it could be a strong alternative to the construction of dense shapes using traditional self-reconfiguration algorithms.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="columns is-centered is-multiline">
+          <div class="column">
+            <div class="box">
+              <div class="columns">
+                <div class="column is-2-desktop">
+                  <figure class="image is-inline-block paper-thumbnail">
                     <a href="./papers/SWEVO20.pdf" target="_blank">
                       <img src="papers/thumbnails/SWEVO20.png"/>
                     </a>
@@ -102,7 +151,8 @@
                         <i class="fas fa-download" aria-hidden="true"></i>
                       </span>
                     </a>
-                    <a class="button" title="doi:TBD" disabled>
+                    <a class="button" title="doi:10.1016/j.swevo.2020.100722" 
+                       href="https://doi.org/10.1016/j.swevo.2020.100722" target="_blank">
                       <span class="icon paper-icon">
                         <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                       </span>
@@ -114,7 +164,7 @@
                     <p class="title is-4 paper-title">Deterministic Scaffold Assembly By Self-Reconfiguring Micro-Robotic Swarms</p>
                   </a>
                   <p class="subtitle is-5 paper-authors">Pierre Thalamy, Benoît Piranda, Frédéric Lassabe, and Julien Bourgeois</p>
-                  <p class="paper-proc subtitle is-6">Swarm and Evolutionary Computation — Special Issue on: “Parallel/Distributed Combinatorics and Optimization”</p>
+                  <p class="paper-proc subtitle is-6">Swarm and Evolutionary Computation — Special Issue on: “Parallel/Distributed Combinatorics and Optimization” (2020)</p>
                   <p class="has-text-justified paper-abstract">
 The self-reconfiguration of large swarms of modular robotic units from one object into another is an intricate problem whose critical parameter that must be optimized is the time required to perform a transformation. Various optimizations methods have been proposed to accelerate transformations, as well as techniques to engineer the shape itself, such as scaffolding which creates an internal object structure filled with holes for easing the motion of modules.
 In this paper, we propose a novel deterministic and distributed method for rapidly constructing the scaffold of an object from an organized reserve of modules placed underneath the reconfiguration scene. This innovative scaffold design is parameterizable and has a face-centered-cubic lattice structure made from our rotating-only micro-modules. Our method operates at two levels of planning, scheduling the construction of components of the scaffold to avoid deadlocks at one level, and handling the navigation of modules and their coordination to avoid collisions in the other.
@@ -165,7 +215,7 @@ We provide an analysis of the method and perform simulations on shapes with an i
                     <p class="title is-4 paper-title">Scaffold-Based Asynchronous Distributed Self-Reconfiguration By Continuous Module Flow</p>
                   </a>
                   <p class="subtitle is-5 paper-authors">Pierre Thalamy, Benoît Piranda, Frédéric Lassabe, and Julien Bourgeois</p>
-                  <p class="paper-proc subtitle is-6">2019 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (2019)</p>
+                  <p class="paper-proc subtitle is-6">IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) (2019)</p>
                   <p class="has-text-justified paper-abstract">
                     Distributed self-reconfiguration in large-scale modular robots is a slow process and increasing its speed a major challenge. In this article, we propose an improved and asynchronous version of a previously proposed distributed self-reconfiguration algorithm to build a parametric scaffolding structure. This scaffold can then be coated to form the desired final object. The scaffolding is built through a continuous feeding of modules into the growing shape from an underneath reserve of modules which shows a reconfiguration time improved by a factor of √[3](N) compared to the previous and synchronous version of the algorithm, therefore attaining an O(N^(1/3)) reconfiguration time, with N the number of modules in the system. Our algorithm uses a local motion coordination algorithm and pipelining techniques to ensure that modules can traverse the structure without collisions or creating deadlocks. Last but not least, our algorithm manages uncertainty in the motion duration of modules without negatively impacting reconfiguration time.
                   </p>
@@ -279,6 +329,32 @@ We provide an analysis of the method and perform simulations on shapes with an i
 
     <section id="modals">
       <div class="container">
+
+        <div class="modal" id="cite-iros20-modal">
+          <div class="modal-background"></div>
+          <div class="modal-content">
+            <article class="message is-primary">
+              <div class="message-header">
+                <p>Citation (BibTex)</p>
+                <button class="delete" aria-label="delete"
+                        onClick="hideModal('cite-iros20-modal')"></button>
+              </div>
+              <div class="message-body has-text-dark">
+                @inproceedings{thalamy_3d_2020,<br>
+                  address = {Las Vegas, NV, USA},<br>
+                  title = {{3D} {Coating} {Self}-assembly for modular robotic scaffolds},<br>
+                  abstract = {This paper addresses the self-reconfiguration problem in large-scale modular robots for the purpose of shape formation for object representation. It aims to show that this process can be accelerated without compromising on the visual aspect of the final object, by creating an internal skeleton of the shape using the previously introduced sandboxing and scaffolding techniques, and then coating this skeleton with a layer of modules for higher visual fidelity.
+
+                We discuss the challenges of the coating problem, introduce a basic method for constructing the coating of a scaffold layer by layer, and show that even with a straightforward algorithm, our scaffolding and coating combo uses much fewer modules than dense shapes and offers attractive reconfiguration times. Finally, we show that it could be a strong alternative to the construction of dense shapes using traditional self-reconfiguration algorithms.},<br>
+                  booktitle = {In {Proceedings} 2020 {IEEE}/{RSJ} {International} {Conference} on {Intelligent} {Robots} and {Systems}},<br>
+                  author = {Thalamy, Pierre and Piranda, Benoit and Bourgeois, Julien},<br>
+                  year = {2020},<br>
+                }
+
+              </div>
+            </article>
+          </div>
+        </div>
 
         <div class="modal" id="cite-swevo20-modal">
           <div class="modal-background"></div>
