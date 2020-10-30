@@ -89,6 +89,10 @@ html, body {
     margin-top: 0.5em;
 }
 
+.defense-outline {
+    margin-top: 1em;
+}
+
 .thesis-jury {
     font-weight: bold;
     margin-top: 0.5em;
@@ -107,6 +111,11 @@ html, body {
 
 .paper-icon {
     color: $primary;
+}
+
+.main-margin {
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 
 .vertical-center {
@@ -139,6 +148,15 @@ html, body {
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.content .card-text {
+    margin-bottom: 1em;
+}
+
+.columns {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 @import "../node_modules/bulma/bulma";
