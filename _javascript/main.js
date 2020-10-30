@@ -56,3 +56,10 @@ function showModal(id) {
 function hideModal(id) {
     document.getElementById(id).classList.remove("is-active");
 }
+
+// Clickable table rows
+jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
